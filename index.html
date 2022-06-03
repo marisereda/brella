@@ -19,21 +19,21 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__container">
-        <a class="logo header__logo" href=""
+        <a class="logo header__logo" href="#header"
           ><svg class="logo__icon" width="75" height="24">
             <use href="./img/icons.svg#icon-brella"></use>
           </svg>
         </a>
         <nav class="nav header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Our plan</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Members</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Employers</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Brokers</a></li>
-            <li class="nav__item"><a class="nav__link" href="">Blog</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#our_plan">Our plan</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#members">Members</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#employers">Employers</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#brokers">Brokers</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#blog">Blog</a></li>
           </ul>
         </nav>
         <button class="button header__button" type="button">Request a demo</button>
@@ -46,66 +46,127 @@
     <!-- Hero section -->
     <main>
       <section class="hero">
-        <div class="container">
-          <h1>Give your team peace of mind with supplemental health insurance from Brella.</h1>
-          <p>I'm wondering...</p>
+        <div class="container hero__container">
+          <h1 class="caption hero__caption">
+            Give your team peace of mind with supplemental health insurance from Brella.
+          </h1>
+          <p class="hero__text">I'm wondering...</p>
+          <form class="hero__form" action="submit">
+            <input
+              class="hero__input"
+              type="text"
+              name=""
+              id=""
+              placeholder="how Brella's plan works"
+            />
+            <input class="hero__submit button" type="submit" value="Find out" />
+          </form>
+
+          <!-- Absolute section -->
+
+          <section class="section absolute__section">
+            <div class="absolute__container">
+              <ul class="absolute__list">
+                <li class="absolute__item absolute__item--umbrella">
+                  <p class="absolute__title">More coverage</p>
+                  <p class="absolute__text">
+                    Brella covers 13,000+ injuries and illnesses from concussions to cancer.
+                  </p>
+                </li>
+                <li class="absolute__item absolute__item--ok">
+                  <p class="absolute__title">Less hassle</p>
+                  <p class="absolute__text">
+                    One easy-to-manage plan with paperless install and online admin tools.
+                  </p>
+                </li>
+                <li class="absolute__item absolute__item--benefits">
+                  <p class="absolute__title">Faster benefits</p>
+                  <p class="absolute__text">
+                    Brella pays claims in hours–not weeks so your people can rest easy.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </section>
 
       <!-- Why Brella section -->
 
-      <section>
+      <section class="section whybrella__section" id="about">
         <div class="container">
-          <div class="div1">
-            <h2>Why Brella?</h2>
-            <h3>Today, any health insurance deductible can feel like a high deductible.</h3>
-            <p>
-              Brella's supplemental health plan enhances your health benefit strategy to ensure that
-              health hardships don't become financial burdens.
-            </p>
-            <a href="">See our plan</a>
-          </div>
-          <div class="div2">
-            <span>60%</span>
-            <p>of Americans would have to borrow to cover an unexpected $1000 expense</p>
-          </div>
-          <div class="deductible">
-            <span>$1,644</span>
-            <div class="rectangle1"></div>
-            <span>Deductible</span>
-          </div>
+          <div class="whybrella__container">
+            <div class="whybrella__textwrap">
+              <h2 class="title whybrella__title">Why Brella?</h2>
+              <h3 class="caption whybrella__caption">
+                Today, any health insurance deductible can feel like a high deductible.
+              </h3>
+              <p class="text whybrella__text">
+                Brella's supplemental health plan enhances your health benefit strategy to ensure
+                that health hardships don't become financial burdens.
+              </p>
+              <a class="link" href="">See our plan</a>
+            </div>
+            <div class="whybrella__diagramwrap">
+              <div class="diagram__discription">
+                <span class="numbers whybrella__numbers">60%</span>
+                <p class="diagram__text">
+                  of Americans would have to borrow to cover an unexpected $1000 expense
+                </p>
+              </div>
+              <div class="diagram__wrap">
+                <span>$1,644</span>
+                <div class="diagram__rectangle diagram__rectangle--deductible"></div>
+                <p class="info diagram__info">Deductible</p>
+              </div>
 
-          <div class="annual-max">
-            <span>$4,039</span>
-            <div class="rectangle1"></div>
-            <span>Annual Max</span>
+              <div class="diagram__wrap">
+                <span>$4,039</span>
+                <div class="diagram__rectangle diagram__rectangle--annualmax"></div>
+                <p class="info diagram__info">Annual Max</p>
+              </div>
+            </div>
           </div>
-
-          <p>2020 individual averages (Source: KFF)</p>
+          <p class="whybrella__resource">2020 individual averages (Source: KFF)</p>
         </div>
       </section>
 
       <!-- Brella brings Section -->
-      <section>
-        <div class="container">
-          <div class="div3">
-            <h2>Brella brings</h2>
-            <ul>
-              <li>Customizable benefits</li>
-              <li>Paperless install & admin</li>
-              <li>Effortless enrollment</li>
-              <li>Easy claims experience</li>
-              <li>Fast benefit payouts</li>
-              <li>Concierge support</li>
+      <section class="section brellabrings">
+        <div class="container brellabrings__container">
+          <div class="brellabrings__menu">
+            <h2 class="title brellabrings__title">Brella brings</h2>
+            <ul class="brellabrings__menu-list">
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">Customizable benefits</button>
+              </li>
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">
+                  Paperless install & admin
+                </button>
+              </li>
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">Effortless enrollment</button>
+              </li>
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">Easy claims experience</button>
+              </li>
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">Fast benefit payouts</button>
+              </li>
+              <li class="brellabrings__menu-item">
+                <button class="brellabrings__button" type="button">Concierge support</button>
+              </li>
             </ul>
           </div>
-          <div class="div4">
-            <p>
+
+          <div class="brellabrings__description">
+            <p class="brellabrings__text">
               Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic
               conditions. Employees can select the payout amounts that fit their needs and their
               budget.
             </p>
-            <p>
+            <p class="brellabrings__text">
               Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit.
               The choice is up to you.
             </p>
@@ -114,137 +175,156 @@
       </section>
 
       <!-- One plan section -->
-      <section>
-        <div class="conteiner">
-          <div class="div5">
-            <h2>one plan, more coverage</h2>
-            <h3>No one can predict which health issues might come their way.</h3>
-            <p>
+      <section class="section" id="our_plan">
+        <div class="container oneplan__container">
+          <div class="oneplan__description">
+            <h2 class="title oneplan__title">one plan, more coverage</h2>
+            <h3 class="caption oneplan__caption">
+              No one can predict which health issues might come their way.
+            </h3>
+            <p class="text oneplan__text">
               Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s
               pockets for most conditions that require urgent medical attention.
             </p>
-            <svg wigth="600" height="298"><use></use></svg>
           </div>
-          <ul>
-            <li>
-              <span>5k</span>
-              <p>covered injuries and illnesses from fractures and appendicitis to cancer</p>
+
+          <ul class="oneplan__list">
+            <li class="oneplan__item">
+              <span class="numbers oneplan__numbers">5k</span>
+              <p class="info oneplan__info">
+                covered injuries and illnesses from fractures and appendicitis to cancer
+              </p>
             </li>
             <li>
-              <span>1x</span>
-              <p>more covered conditions than Accident and Critical Illness plans—combined</p>
+              <span class="numbers oneplan__numbers">1x</span>
+              <p class="info oneplan__info">
+                more covered conditions than Accident and Critical Illness plans—combined
+              </p>
             </li>
             <li>
-              <span>40%</span>
-              <p>plans are 100% guaranteed issue. No medical underwriting required</p>
+              <span class="numbers oneplan__numbers">40 %</span>
+              <p class="info oneplan__info">
+                plans are 100% guaranteed issue. No medical underwriting required
+              </p>
             </li>
             <li>
-              <span>0</span>
-              <p>Zero limitations or exclusions for pre-existing conditions</p>
+              <span class="numbers oneplan__numbers">0</span>
+              <p class="info oneplan__info">
+                Zero limitations or exclusions for pre-existing conditions
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Members Claims experience -->
-      <section class="without-padding">
-        <div class="container">
-          <svg>
-            <use></use>
-          </svg>
-          <div class="div6">
-            <h2>a better claims experience</h2>
-            <h3>Give your people a plan that pays in hours—not weeks.</h3>
-            <p>
+      <!-- Experience -->
+      <section class="section experience__section" id="members">
+        <div class="container experience__container">
+          <div class="experience__description">
+            <h2 class="title experience__title">a better claims experience</h2>
+            <h3 class="caption experience__caption">
+              Give your people a plan that pays in hours—not weeks.
+            </h3>
+            <p class="text experience__text">
               Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file
               a claim sooner and get paid faster via our Member Portal or mobile app.
             </p>
-            <button type="button">Play Video</button>
+            <button class="link" type="button">Play Video</button>
           </div>
         </div>
       </section>
 
-      <!-- For employers -->
+      <!-- Employers -->
 
-      <section>
-        <div class="container">
-          <h2>For employers</h2>
-          <h3>Easy enrollment meets simple administration.</h3>
-          <p>
+      <section class="section employers" id="employers">
+        <div class="container employers__cotainer">
+          <h2 class="title employers__title">For employers</h2>
+          <h3 class="caption employers__caption">Easy enrollment meets simple administration.</h3>
+          <p class="text employers__text">
             Brella brings 100% paperless implementation, enrollment, and admin. Plug into our
             platforms or we’ll plug into yours.
           </p>
-          <a href="">Learn more</a>
+          <a class="link" href="">Learn more</a>
         </div>
       </section>
 
       <!-- Brockers -->
 
-      <section>
-        <div class="container">
-          <h2>HIDDEN Brockers</h2>
-          <h3>Proudly backed by</h3>
-          <ul>
-            <li>
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-            <li>
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-            <li>
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-            <li>
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-            <li>
-              <svg>
-                <use></use>
-              </svg>
-            </li>
-          </ul>
+      <section class="section brockers" id="brokers">
+        <div class="container brockers__container">
+          <h2 class="title brockers__title">HIDDEN Brockers</h2>
+          <h3 class="caption brockers__caption">Proudly backed by</h3>
+          <div class="brockers__wrap">
+            <button
+              class="brockers__button brockers__button--left"
+              type="button"
+              width="30"
+              height="23"
+            ></button>
+            <ul class="brockers__list">
+              <li class="brockers__item">
+                <a class="brockers__link" href="">
+                  <img class="brockers__img" width="146" height="60" src="./img/broker1.png" />
+                </a>
+              </li>
+              <li class="brockers__item">
+                <a class="brockers__link" href="">
+                  <img class="brockers__img" width="146" height="60" src="./img/broker2.png" />
+                </a>
+              </li>
+              <li class="brockers__item">
+                <a class="brockers__link" href="">
+                  <img class="brockers__img" width="146" height="60" src="./img/broker3.png" />
+                </a>
+              </li>
+              <li class="brockers__item">
+                <a class="brockers__link" href="">
+                  <img class="brockers__img" width="146" height="60" src="./img/broker4.png" />
+                </a>
+              </li>
+              <li class="brockers__item">
+                <a class="brockers__link" href="">
+                  <img class="brockers__img" width="118" height="60" src="./img/broker5.png" />
+                </a>
+              </li>
+            </ul>
+            <button
+              class="brockers__button brockers__button--right"
+              type="button"
+              width="30"
+              height="23"
+            ></button>
+          </div>
         </div>
       </section>
 
       <!-- Blog -->
 
-      <section>
-        <div class="container">
-          <h2>HIDDEN Blog</h2>
-          <ul>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-                <p></p>
-                <p></p>
+      <section class="section blog" id="blog">
+        <div class="container blog__container">
+          <h2 class="title blog__title">Blog</h2>
+          <ul class="blog__list">
+            <li class="blog__item">
+              <a class="blog__link" href="">
+                <img class="blog__img" src="./img/podcast.jpg" alt="" width="355" height="237" />
+                <p class="blog__cathegory">Podcast</p>
+                <p class="blog__text">
+                  Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald
+                </p>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-                <p></p>
-                <p></p>
+            <li class="blog__item">
+              <a class="blog__link" href="">
+                <img class="blog__img" src="./img/innovation.png" alt="" width="355" height="237" />
+                <p class="blog__cathegory">Insurance Innovation</p>
+                <p class="blog__text">How to Design Simpler Insurance Benefits</p>
               </a>
             </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-                <p></p>
-                <p></p>
+            <li class="blog__item">
+              <a class="blog__link" href="">
+                <img class="blog__img" src="./img/strategy.png" alt="" width="355" height="237" />
+                <p class="blog__cathegory">Benefits Strategy</p>
+                <p class="blog__text">Executive Benefits Outlook with Dan Aceti</p>
               </a>
             </li>
           </ul>
@@ -253,97 +333,120 @@
 
       <!-- Contact -->
 
-      <section>
-        <div class="container">
-          <img src="" alt="" width="720" height="577" />
-          <div class="div7">
-            <h2>HIDDEN Contact</h2>
-            <h3>Ready to explore Brella’s supplemental health solution?</h3>
-            <p>Let’s talk.</p>
-            <button type="button">Get in touch</button>
+      <section class="contact" id="contact">
+        <div class="container contact__container">
+          <!-- <img class="contact__img" src="./img/cotacts.jpg" alt="" width="720" height="577" /> -->
+          <div class="contact_img"></div>
+          <div class="contact__wrap">
+            <h2 class="title contact__title">HIDDEN Contact</h2>
+            <h3 class="caption contact__caption">
+              Ready to explore Brella’s supplemental health solution?
+            </h3>
+            <p class="caption contact__text">Let’s talk.</p>
+            <button class="button" type="button">Get in touch</button>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Navigation -->
 
-    <footer>
-      <div class="container">
-        <a href="">
-          <svg>
-            <use></use>
-          </svg>
-        </a>
-        <div class="div8">
-          <p>Join Brella</p>
-          <ul>
-            <li><a href="">Our plan</a></li>
-            <li><a href="">Employers</a></li>
-            <li><a href="">Brokers</a></li>
-            <li><a href="">Members</a></li>
-          </ul>
-        </div>
 
-        <div class="div9">
-          <p>Company</p>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+      <section class="navigation">
+        <div class="container navigation__container">
+          <div class="navigation__wrap">
+            <a class="logo navigation__logo" href="#header"
+              ><svg class="logo__icon" width="75" height="24">
+                <use href="./img/icons.svg#icon-brella-footer"></use>
+              </svg>
+            </a>
+            <div class="navigation__join">
+              <p class="navigation__title">Join Brella</p>
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="link navigation__link" href="#our_plan">Our plan</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#employers">Employers</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#brokers">Brokers</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#members">Members</a></li>
+              </ul>
+            </div>
+
+            <div class="navigation__company">
+              <p class="navigation__title">Company</p>
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="link navigation__link" href="#about">About</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#blog">Blog</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#careers">Careers</a></li>
+                <li class="navigation__item"><a class="link navigation__link" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navigation__signup">
+              <p class="navigation__caption">Get the latest</p>
+              <p class="navigation__text">
+                Sign up to receive benefits news and insights in your inbox once a month.
+              </p>
+              <form class="navigation__form" action="submit">
+                <input class="navigation__input" type="text" name="" id="" placeholder="Email"/>
+              <input class="navigation__submit" type="submit" value=""></input>
+              </form>
+
+              <ul class="navigation__sociallist">
+                <li class="navigation__socialitem">
+                  <a class="navigation__sociallink" href="">
+                    <svg class="navigation__socialicon" width="26" height="26"><use href="./img/icons.svg#icon-linkedin"></use></svg>
+                  </a>
+                </li>
+                <li class="navigation__socialitem">
+                  <a class="navigation__sociallink" href="">
+                    <svg class="navigation__socialicon" width="26" height="26">
+                      <use href="./img/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="navigation__socialitem">
+                  <a class="navigation__sociallink" href="">
+                    <svg class="navigation__socialicon" width="26" height="26">
+                      <use href="./img/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+ <!-- Footer -->
+
+      <footer class="footer">
+        <div class="container footer__container">
+
+            <p class="footer__text">
+              Brella is a limited benefit policy; it is not a substitute for health insurance. The
+              information provided on this website is illustrative only. A complete description of
+              benefits, limitations, and exclusions are provided in your certificate of Insurance and
+              applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values
+              listed do not guarantee an amount to be paid for listed conditions. Product not available
+              in all states. All coverage is subject to the terms and conditions of the master group
+              policy.
+            </p>
+            <p class="footer__text">
+              Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No.
+              PFSB11-TX
+            </p>
+            <p class="footer__text">
+              Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at (844)
+              987-1070
+            </p>
+            <div class="footer__wrap">
+              <p class="footer__copy">&copy; 2021 Brella Insurance Inc. All Rights Reserved.</p>
+              <a class="footer__link" href="">Privacy</a>
+              <a class="footer__link" href="">Terms of Service</a>
+            </div>
+
+
+
         </div>
-        <div class="div10">
-          <p>Get the latest</p>
-          <p>Sign up to receive benefits news and insights in your inbox once a month.</p>
-          <input type="text" name="" id="" />
-          <button type="button"></button>
-          <ul>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p>
-          Brella is a limited benefit policy; it is not a substitute for health insurance. The
-          information provided on this website is illustrative only. A complete description of
-          benefits, limitations, and exclusions are provided in your certificate of Insurance and
-          applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values
-          listed do not guarantee an amount to be paid for listed conditions. Product not available
-          in all states. All coverage is subject to the terms and conditions of the master group
-          policy.
-        </p>
-        <p>
-          Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No.
-          PFSB11-TX
-        </p>
-        <p>
-          Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at (844)
-          987-1070
-        </p>
-        <p>© 2021 Brella Insurance Inc. All Rights Reserved.</p>
-        <a href="">Privacy</a>
-        <a href="">Terms of Service</a>
-      </div>
     </footer>
+
+
   </body>
 </html>
